@@ -22,15 +22,18 @@ body {
 
 
 .btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 14px 30px;
-  background: var(--dorado);
-  color: black;
-  text-decoration: none;
-  border-radius: 10px;
-  font-weight: bold;
-  transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 30px;
+    background: var(--dorado);
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+
+    max-width: 90%;
+    text-align: center;
 }
 
 .btn:hover {
@@ -354,3 +357,13 @@ h2 {
   padding: 50px 20px;
 }
 
+@media (max-width: 768px) {
+
+    .btn {
+        font-size: 1rem;
+        padding: 16px 20px;
+        width: 90%;
+        max-width: 350px;
+    }
+
+}
