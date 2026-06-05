@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://waltersanchezz.github.io/rodacenter-web/sitemap.xml
