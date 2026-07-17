@@ -7,7 +7,7 @@ body {
 /* HERO */
 .hero {
   background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)),
-              url("Imagenes_rodacenter/Rodacenter1.png"); /* puedes usar tu imagen */
+              url("img/Rodacenter1.png"); /* puedes usar tu imagen */
   background-size: cover;
   background-position: center;
   color: var(--blanco);
