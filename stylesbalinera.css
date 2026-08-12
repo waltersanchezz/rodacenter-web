@@ -341,3 +341,150 @@ h2 {
   background: #ffd600;
   color: #000;
 }
+
+/* HEADER / FOOTER GLOBAL */
+.site-header {
+  background: #050d16;
+  border-bottom: 2px solid #facc15;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.site-header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 20px;
+}
+
+.site-logo {
+  display: block;
+  width: 190px;
+  height: 64px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.site-logo img {
+  width: 190px;
+  height: 64px;
+  object-fit: cover;
+  object-position: center 6%;
+  display: block;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 18px;
+  flex: 1;
+}
+
+.site-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  color: #facc15;
+}
+
+.site-header-cta {
+  display: inline-block;
+  background: #facc15;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 8px;
+  white-space: nowrap;
+  margin-left: auto;
+}
+
+.site-header-cta:hover {
+  background: #eab308;
+  color: #000;
+}
+
+.footer {
+  background: #050d16;
+  border-top: 2px solid #facc15;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.footer h3 {
+  color: #facc15;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  color: white;
+  margin: 10px 0;
+}
+
+.footer a {
+  color: #facc15;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  color: #94a3b8;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.site-footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 20px;
+  margin: 18px 0;
+}
+
+.site-footer-nav a {
+  color: #fff;
+}
+
+.site-footer-nav a:hover,
+.site-footer-nav a[aria-current="page"] {
+  color: #facc15;
+}
+
+@media (max-width: 768px) {
+  .site-header-inner {
+    justify-content: space-between;
+  }
+
+  .site-nav {
+    flex: 1 1 100%;
+    justify-content: center;
+    order: 3;
+    padding-top: 4px;
+  }
+
+  .site-header-cta {
+    margin-left: 0;
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .site-logo,
+  .site-logo img {
+    width: 148px;
+    height: 54px;
+  }
+}
