@@ -3,8 +3,276 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Baterías disponibles</title>
+  <title>Baterías Willard a domicilio en Manizales | Rodacenter</title>
+  <meta name="description" content="Baterías Willard a domicilio en Manizales. Te ayudamos a encontrar la batería correcta para tu vehículo, con instalación y garantía. Consulta por WhatsApp con Rodacenter.">
+  <meta property="og:title" content="Baterías Willard a domicilio en Manizales | Rodacenter">
+  <meta property="og:description" content="Te ayudamos a encontrar la batería Willard correcta para tu vehículo en Manizales. Servicio a domicilio e instalación. Consulta por WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://waltersanchezz.github.io/rodacenter-web/Imagenes_rodacenter/Bateria.png">
   <link rel="stylesheet" href="stylesbaterias.css">
+  <style>
+    html, body {
+      overflow-x: hidden;
+      max-width: 100%;
+    }
+
+    .bat-hero,
+    .bat-trust,
+    .bat-productos,
+    .bat-ayuda,
+    .bat-servicio,
+    .bat-cta {
+      box-sizing: border-box;
+      padding: 44px 16px;
+      text-align: center;
+    }
+
+    .bat-hero *,
+    .bat-trust *,
+    .bat-productos *,
+    .bat-ayuda *,
+    .bat-servicio *,
+    .bat-cta * {
+      box-sizing: border-box;
+    }
+
+    .bat-wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .bat-hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.72), rgba(5, 13, 22, 0.92)),
+        url("Imagenes_rodacenter/Rodacenter1.png");
+      background-size: cover;
+      background-position: center;
+      padding: 48px 16px 56px;
+    }
+
+    .bat-hero h1 {
+      color: #fff;
+      font-size: 1.85rem;
+      line-height: 1.25;
+      margin: 0 0 14px;
+    }
+
+    .bat-hero p {
+      color: #e2e8f0;
+      font-size: 1.05rem;
+      line-height: 1.5;
+      margin: 0 auto 28px;
+      max-width: 640px;
+    }
+
+    .bat-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 360px;
+      min-height: 48px;
+      padding: 14px 20px;
+      border-radius: 10px;
+      background: #facc15;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .bat-trust {
+      background: #081421;
+    }
+
+    .bat-trust-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    .bat-trust-list li {
+      background: #112b44;
+      color: #fff;
+      font-weight: bold;
+      padding: 14px 16px;
+      border-radius: 12px;
+      border-left: 3px solid #facc15;
+    }
+
+    .bat-productos h2,
+    .bat-ayuda h2,
+    .bat-servicio h2,
+    .bat-cta h2 {
+      color: #facc15;
+      margin: 0 0 24px;
+    }
+
+    .bat-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    .bat-card {
+      background: #112b44;
+      border: 1px solid rgba(250, 204, 21, 0.35);
+      border-radius: 16px;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .bat-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: contain;
+      background: #000;
+      border-radius: 12px;
+    }
+
+    .bat-card h3 {
+      color: #facc15;
+      margin: 14px 0 8px;
+      min-height: 0;
+    }
+
+    .bat-card p {
+      color: #fff;
+      margin: 0 0 6px;
+      font-size: 0.95rem;
+    }
+
+    .bat-card .bat-btn {
+      margin-top: 14px;
+      max-width: none;
+    }
+
+    .bat-ayuda,
+    .bat-servicio {
+      background: #0b1a2a;
+    }
+
+    .bat-ayuda p,
+    .bat-servicio p,
+    .bat-cta p {
+      color: #fff;
+      line-height: 1.55;
+      max-width: 720px;
+      margin: 0 auto 22px;
+    }
+
+    .bat-servicio ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 10px;
+    }
+
+    .bat-servicio li {
+      background: #112b44;
+      color: #fff;
+      padding: 12px 16px;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    .bat-cta {
+      background: #050d16;
+      border-top: 2px solid #facc15;
+    }
+
+    @media (max-width: 767px) {
+      /* 1. Header: área táctil mayor sin hinchar el header */
+      .site-header-cta {
+        box-sizing: border-box;
+        min-height: 44px;
+        padding: 10px 14px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        line-height: 1.2;
+      }
+
+      .site-nav a {
+        box-sizing: border-box;
+        display: inline-flex;
+        align-items: center;
+        min-height: 40px;
+        padding: 8px 4px;
+        font-size: 15px;
+        line-height: 1.2;
+      }
+
+      .site-header-inner {
+        gap: 8px 12px;
+        padding: 8px 14px;
+      }
+
+      .site-nav {
+        padding-top: 0;
+        gap: 4px 14px;
+      }
+
+      /* 2. Productos: más alto útil, sin deformar */
+      .bat-card img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 2 / 3;
+        object-fit: contain;
+        object-position: center;
+      }
+
+      .bat-card {
+        padding: 12px;
+      }
+
+      /* 3. Confianza: menos altura vertical en móvil */
+      .bat-trust {
+        padding: 24px 16px;
+      }
+
+      .bat-trust-list {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+      }
+
+      .bat-trust-list li {
+        padding: 10px 10px;
+        font-size: 0.9rem;
+        border-radius: 10px;
+        line-height: 1.3;
+      }
+
+      .bat-trust-list li:last-child {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .bat-hero h1 {
+        font-size: 2.4rem;
+      }
+
+      .bat-trust-list {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .bat-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .bat-servicio ul {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .bat-card img {
+        height: 260px;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -21,77 +289,106 @@
     </div>
   </header>
 
-<section class="galeria">
-  <h1>Baterías disponibles</h1>
+  <section class="bat-hero">
+    <div class="bat-wrap">
+      <h1>¿Qué batería lleva tu carro?</h1>
+      <p>Te ayudamos a encontrar la batería Willard correcta para tu vehículo en Manizales.</p>
+      <a class="bat-btn" href="https://wa.me/573007123763?text=Hola%2C%20quiero%20consultar%20una%20bater%C3%ADa%20para%20mi%20veh%C3%ADculo." target="_blank" rel="noopener noreferrer">🔋 Consultar mi batería</a>
+    </div>
+  </section>
 
-  <div class="grid">
-    <img src="Imagenes_rodacenter/BATERIA24BD-850.png" alt="Batería Willard 24BD-850">
-    <img src="Imagenes_rodacenter/BATERIA27AI-1250.png" alt="Batería Willard 27AI-1250">
-    <img src="Imagenes_rodacenter/BATERIA27R-80.png" alt="Batería Willard 27R-80">
-    <img src="Imagenes_rodacenter/BATERIAW-L4-80AH.png" alt="Batería Willard W-L4 80AH">
-  </div>
+  <section class="bat-trust">
+    <div class="bat-wrap">
+      <ul class="bat-trust-list">
+        <li>🔋 Baterías Willard</li>
+        <li>🚗 Para carros y vehículos</li>
+        <li>📍 Atención en Manizales</li>
+        <li>🏠 Servicio a domicilio</li>
+        <li>🔧 Instalación de batería</li>
+      </ul>
+    </div>
+  </section>
 
-  <a href="index.html" class="volver">← Volver</a>
+  <section class="bat-productos">
+    <div class="bat-wrap">
+      <h2>Baterías Willard</h2>
+      <div class="bat-grid">
+        <article class="bat-card">
+          <img src="Imagenes_rodacenter/BATERIA24BD-850.png" alt="Batería Willard 24BD-850">
+          <h3>Willard 24BD-850</h3>
+          <p>Referencia: 24BD-850</p>
+          <a class="bat-btn" href="https://wa.me/573007123763?text=Hola%2C%20quiero%20consultar%20la%20bater%C3%ADa%20Willard%2024BD-850." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+        </article>
 
-<section class="info-baterias">
-  <h2>⚡ Baterías Willard de alto rendimiento</h2>
+        <article class="bat-card">
+          <img src="Imagenes_rodacenter/BATERIA27AI-1250.png" alt="Batería Willard 27AI-1250">
+          <h3>Willard 27AI-1250</h3>
+          <p>Referencia: 27AI-1250</p>
+          <a class="bat-btn" href="https://wa.me/573007123763?text=Hola%2C%20quiero%20consultar%20la%20bater%C3%ADa%20Willard%2027AI-1250." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+        </article>
 
-  <p>
-    Trabajamos con baterías <strong>Willard</strong>, reconocidas por su 
-    <strong>alta calidad, excelente rendimiento y larga duración</strong>, ideales 
-    para garantizar el arranque y funcionamiento óptimo de tu vehículo.
-  </p>
+        <article class="bat-card">
+          <img src="Imagenes_rodacenter/BATERIA27R-80.png" alt="Batería Willard 27R-80">
+          <h3>Willard 27R-80</h3>
+          <p>Referencia: 27R-80</p>
+          <a class="bat-btn" href="https://wa.me/573007123763?text=Hola%2C%20quiero%20consultar%20la%20bater%C3%ADa%20Willard%2027R-80." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+        </article>
 
-  <p>
-    Contamos con disponibilidad para <strong>todo tipo de vehículos</strong>:
-    livianos, particulares <strong>vehículos pesados</strong>.
-  </p>
+        <article class="bat-card">
+          <img src="Imagenes_rodacenter/BATERIAW-L4-80AH.png" alt="Batería Willard W-L4 80AH">
+          <h3>Willard W-L4 80AH</h3>
+          <p>Referencia: W-L4</p>
+          <p>Amperaje: 80 Ah</p>
+          <a class="bat-btn" href="https://wa.me/573007123763?text=Hola%2C%20quiero%20consultar%20la%20bater%C3%ADa%20Willard%20W-L4%2080AH." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+        </article>
+      </div>
+    </div>
+  </section>
 
-  <p>
-    🚗 <strong>Servicio a domicilio con instalación GRATIS</strong> dentro de la ciudad de 
-    <strong>Manizales</strong>.
-  </p>
+  <section class="bat-ayuda">
+    <div class="bat-wrap">
+      <h2>¿No sabes qué batería necesita tu vehículo?</h2>
+      <p>No te preocupes. Escríbenos y te ayudamos a identificar la batería adecuada según la marca, modelo, año y características de tu vehículo.</p>
+      <a class="bat-btn" href="https://wa.me/573007123763?text=Hola%2C%20quiero%20consultar%20una%20bater%C3%ADa%20para%20mi%20veh%C3%ADculo." target="_blank" rel="noopener noreferrer">🔋 Encontrar mi batería</a>
+    </div>
+  </section>
 
-  <p>
-    🔋 Entregando tu batería usada, obtienes <strong>descuentos adicionales</strong>.
-  </p>
+  <section class="bat-servicio">
+    <div class="bat-wrap">
+      <h2>Servicio de batería a domicilio en Manizales</h2>
+      <ul>
+        <li>Atención a domicilio</li>
+        <li>Instalación</li>
+        <li>Garantía</li>
+        <li>Descuento por batería usada</li>
+      </ul>
+    </div>
+  </section>
 
-  <p>
-    🛡️ Todas nuestras baterías cuentan con <strong>garantía a nivel nacional</strong>.
-  </p>
+  <section class="bat-cta">
+    <div class="bat-wrap">
+      <h2>¿Necesitas una batería para tu carro?</h2>
+      <p>Consulta con Rodacenter y encuentra la opción adecuada para tu vehículo.</p>
+      <a class="bat-btn" href="https://wa.me/573007123763?text=Hola%2C%20quiero%20consultar%20una%20bater%C3%ADa%20para%20mi%20veh%C3%ADculo." target="_blank" rel="noopener noreferrer">💬 Consultar batería por WhatsApp</a>
+    </div>
+  </section>
 
-  <div class="cta-pagina">
-    <p class="cta-pregunta">🔋 ¿No sabes qué batería necesita tu vehículo?</p>
-    <a class="btn-cta btn-cta-bot" href="https://wa.me/573007123763?text=Hola%2C%20quiero%20consultar%20una%20bater%C3%ADa%20para%20mi%20veh%C3%ADculo." target="_blank" rel="noopener noreferrer">
-      🤖 Consultar batería con nuestro asistente
-    </a>
-    <p class="cta-pregunta cta-pregunta-sec">👤 ¿Prefieres hablar directamente con nosotros?</p>
-    <a class="btn-cta btn-cta-humano" href="https://wa.me/573044662519?text=Hola%2C%20quiero%20hablar%20directamente%20con%20Rodacenter." target="_blank" rel="noopener noreferrer">
-      👤 Hablar directamente
-    </a>
-  </div>
-</section>
-</section>
-
-<footer class="footer site-footer">
-  <div class="container">
-    <h3>RODACENTER MANIZALES</h3>
-    <p>Baterías Willard</p>
-    <p>Rodamientos</p>
-    <p>🤖 WhatsApp del asistente<br>
-      <a href="https://wa.me/573007123763?text=Hola%2C%20quiero%20consultar%20una%20bater%C3%ADa%20para%20mi%20veh%C3%ADculo." target="_blank" rel="noopener noreferrer">300 712 3763</a>
-    </p>
-    <p>👤 Atención personal<br>
-      <a href="https://wa.me/573044662519?text=Hola%2C%20quiero%20hablar%20directamente%20con%20Rodacenter." target="_blank" rel="noopener noreferrer">304 466 2519</a>
-    </p>
-    <nav class="site-footer-nav" aria-label="Pie de página">
-      <a href="index.html">Inicio</a>
-      <a href="baterias.html">Baterías</a>
-      <a href="rodamientos.html">Rodamientos</a>
-    </nav>
-    <p>Manizales, Caldas</p>
-    <p class="copyright">© 2026 Roda Center - Todos los derechos reservados</p>
-  </div>
-</footer>
+  <footer class="footer site-footer">
+    <div class="container">
+      <h3>RODACENTER MANIZALES</h3>
+      <p>Baterías Willard</p>
+      <p>Rodamientos</p>
+      <p>🤖 WhatsApp del asistente<br>
+        <a href="https://wa.me/573007123763?text=Hola%2C%20quiero%20consultar%20una%20bater%C3%ADa%20para%20mi%20veh%C3%ADculo." target="_blank" rel="noopener noreferrer">300 712 3763</a>
+      </p>
+      <nav class="site-footer-nav" aria-label="Pie de página">
+        <a href="index.html">Inicio</a>
+        <a href="baterias.html">Baterías</a>
+        <a href="rodamientos.html">Rodamientos</a>
+      </nav>
+      <p>Manizales, Caldas</p>
+      <p class="copyright">© 2026 Roda Center - Todos los derechos reservados</p>
+    </div>
+  </footer>
 </body>
 </html>
