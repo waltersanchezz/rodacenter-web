@@ -317,3 +317,27 @@ h2 {
   font-size: 18px;
   color: #ffd600;
 }
+
+.cta-pagina {
+  margin-top: 28px;
+}
+
+.cta-pregunta {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffd600;
+  margin: 18px 0 10px;
+}
+
+.btn-cta {
+  display: inline-block;
+  padding: 14px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-cta-humano {
+  background: #ffd600;
+  color: #000;
+}
