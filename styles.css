@@ -513,3 +513,397 @@ h2 {
     height: 54px;
   }
 }
+
+/* HOME LANDING */
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background: #0b1a2d;
+  overflow-x: hidden;
+}
+
+.home-hero,
+.home-servicios,
+.home-pasos,
+.home-porque,
+.home-marcas,
+.home-trabajos,
+.home-cobertura,
+.home-faq,
+.home-cta {
+  box-sizing: border-box;
+  padding: 48px 20px;
+}
+
+.home-hero *,
+.home-servicios *,
+.home-pasos *,
+.home-porque *,
+.home-marcas *,
+.home-trabajos *,
+.home-cobertura *,
+.home-faq *,
+.home-cta * {
+  box-sizing: border-box;
+}
+
+.home-kicker {
+  color: #facc15;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin: 0 0 12px;
+}
+
+.home-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.72), rgba(5, 13, 22, 0.92)),
+    url("Imagenes_rodacenter/Rodacenter1.png");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 56px 20px 64px;
+}
+
+.home-hero-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.home-hero h1 {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0 0 14px;
+}
+
+.home-hero-sub {
+  color: #e2e8f0;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  margin: 0 0 28px;
+}
+
+.home-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.home-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 360px;
+  min-height: 48px;
+  padding: 14px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+.home-btn-primary {
+  background: #facc15;
+  color: #000;
+  box-shadow: 0 8px 20px rgba(250, 204, 21, 0.2);
+}
+
+.home-btn-primary:hover {
+  background: #eab308;
+  color: #000;
+}
+
+.home-btn-secondary {
+  background: transparent;
+  color: #facc15;
+  border: 2px solid #facc15;
+}
+
+.home-btn-secondary:hover {
+  background: #facc15;
+  color: #000;
+}
+
+.home-service-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.home-service {
+  background: #112b44;
+  border: 1px solid rgba(250, 204, 21, 0.35);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+}
+
+.home-service-media {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.home-service img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  background: #000;
+  border-radius: 12px;
+}
+
+.home-service h3 {
+  color: #facc15;
+  margin: 0 0 12px;
+}
+
+.home-service ul {
+  margin: 0 0 20px;
+  padding-left: 18px;
+  color: #fff;
+  line-height: 1.55;
+}
+
+.home-service .home-btn {
+  max-width: none;
+}
+
+.home-steps,
+.home-reasons {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.home-step,
+.home-reason {
+  background: #112b44;
+  border-radius: 14px;
+  padding: 22px 18px;
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+}
+
+.home-step-num {
+  display: block;
+  color: #facc15;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.home-step h3 {
+  color: #fff;
+  margin: 0 0 8px;
+}
+
+.home-step p {
+  margin: 0;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+.home-reason {
+  font-weight: bold;
+  border-left: 3px solid #facc15;
+}
+
+.home-brands {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.home-brand {
+  margin: 0;
+  background: #050d16;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(250, 204, 21, 0.2);
+}
+
+.home-brand img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  display: block;
+}
+
+.home-brand figcaption {
+  color: #facc15;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.home-videos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.home-video {
+  margin: 0;
+  background: #050d16;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+}
+
+.home-video video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  background: #000;
+}
+
+.home-video figcaption,
+.home-photos + .home-video figcaption {
+  color: #facc15;
+  font-weight: bold;
+  padding: 10px 12px 14px;
+}
+
+.home-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.home-photos img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.home-cobertura {
+  background: #081421;
+}
+
+.home-cobertura-intro {
+  color: #fff;
+  margin-bottom: 18px;
+}
+
+.home-zones {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.home-zones li {
+  background: #112b44;
+  color: #facc15;
+  font-weight: bold;
+  padding: 10px 14px;
+  border-radius: 999px;
+}
+
+.home-faq-list {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.home-faq details {
+  background: #112b44;
+  border: 1px solid rgba(250, 204, 21, 0.22);
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+}
+
+.home-faq summary {
+  color: #facc15;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.home-faq details p {
+  color: #fff;
+  margin: 12px 0 0;
+  line-height: 1.5;
+}
+
+.home-cta {
+  background: #050d16;
+  border-top: 2px solid #facc15;
+}
+
+.home-cta p {
+  color: #e2e8f0;
+  margin: 0 0 24px;
+}
+
+@media (min-width: 768px) {
+  .home-hero h1 {
+    font-size: 2.6rem;
+  }
+
+  .home-actions {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .home-btn {
+    width: auto;
+    min-width: 260px;
+  }
+
+  .home-btn-primary {
+    min-height: 52px;
+    font-size: 1.05rem;
+  }
+
+  .home-service-grid,
+  .home-videos {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .home-steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .home-reasons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .home-brands {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .home-hero,
+  .home-servicios,
+  .home-pasos,
+  .home-porque,
+  .home-marcas,
+  .home-trabajos,
+  .home-cobertura,
+  .home-faq,
+  .home-cta {
+    padding: 36px 16px;
+  }
+
+  .home-hero {
+    padding: 36px 16px 44px;
+  }
+
+  .home-hero h1 {
+    font-size: 1.7rem;
+  }
+}
